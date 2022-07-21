@@ -1,0 +1,11 @@
+DROP DATABASE IF EXISTS notes_db;
+CREATE DATABASE notes_db;
+
+USE notes_db;
+
+CREATE TABLE notes (
+    id INTEGER AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(30) NOT NULL,
+    author VARCHAR(30) NOT NULL,
+    body VARCHAR(500) NOT NULL
+);
